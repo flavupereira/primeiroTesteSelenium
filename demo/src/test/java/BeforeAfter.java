@@ -12,19 +12,17 @@ public class BeforeAfter {
 
         navegador.get("https://automationexercise.com/login");
 
-        // navegador.findElement(By.name("name")).sendKeys("curso");
-
-        // Criar Formulario
+        
         WebElement loginPararCriarUsuario = navegador.findElement(By.className("signup-form"));
 
-        // Preecnher o campo name
+       
         loginPararCriarUsuario.findElement(By.name("name")).sendKeys("curso");
 
-        // clicar no botao singup
+        
         loginPararCriarUsuario.findElement(By.name("email")).sendKeys("curso2000teste@teste.com.br");
 
         navegador.findElement(By.xpath("/html/body/section/div/div/div[3]/div/form/button")).click();
-        // navegador.quit();
+       
     }
 
 }
