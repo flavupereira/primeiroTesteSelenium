@@ -36,10 +36,47 @@ testes simples até uma estrutura mais robusta com padrão Page Object.
 
   ## 🚀 Funcionalidades Implementadas
 
-## 1. Testes Básicos
+### 1. Testes Básicos
 
 - **BeforeAfter.java** - Teste simples com WebDriver
 
 - **Cadastro.java** - Teste com configuração Before/After do TestNG
 
 - **CadastroFormulario.java** - Teste completo com preenchimento de formulário e dados aleatórios
+
+## 2. Padrão Page Object
+
+- **Web.java** - Factory para criação do WebDriver
+
+- **Basepage.java** - Classe base para pages
+
+- **PreCadastro.java** - Page Object para página inicial de cadastro
+
+- **PaginaDeCadastro.java** - Page Object para formulário de cadastro
+
+- **ContaCriada.java** - Page Object para página de confirmação
+
+- **CadastroPageObject.java** - Teste utilizando o padrão Page Object
+
+  ##📖 Como Executar
+## Pré-requisitos
+
+- Java 17 ou superior
+
+- Maven 3.6+
+
+- Chrome Browser instalado
+
+- Executando os Testes
+
+## 🧩 Padrão Page Object Implementado
+
+O projeto utiliza o padrão Page Object Model (POM) que oferece:
+
+- Encapsulamento: Detalhes de localização de elementos são encapsulados
+
+- Reusabilidade: Métodos podem ser reutilizados em múltiplos testes
+
+- Manutenibilidade: Mudanças na UI exigem atualizações apenas nas pages
+
+- Legibilidade: Testes ficam mais claros e expressivos
