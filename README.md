@@ -1,0 +1,45 @@
+# 🧪 Projeto de Automação de Testes - Automation Exercise
+
+Projeto de automação de testes web utilizando Selenium WebDriver, TestNG e padrão
+Page Object para testar o fluxo de cadastro no site Automation Exercise.
+
+## 📋 Descrição do Projeto
+
+Este projeto implementa testes automatizados para o processo de cadastro de usuários no 
+site Automation Exercise, utilizando diferentes abordagens de implementação que evoluem desde 
+testes simples até uma estrutura mais robusta com padrão Page Object.
+
+## 📄 Arquivos de Configuração
+
+- pom.xml - Configuração do Maven com dependências
+
+- settings.json - Configurações do VS Code para Java
+
+## 🛠️ Tecnologias Utilizadas
+
+- Java 17 - Linguagem de programação
+
+- Selenium WebDriver 4.20.0 - Automação web
+
+- TestNG 7.10.2 - Framework de testes
+
+- WebDriverManager 5.8.0 - Gerenciamento automático de drivers
+
+- JUnit 4.13.2 - Assertions para testes
+
+- FEST Assert 1.4 - Biblioteca de assertions
+
+- Apache Commons Lang 3 - Geração de dados aleatórios
+
+- Maven - Gerenciamento de dependências e build
+
+
+  ## 🚀 Funcionalidades Implementadas
+
+## 1. Testes Básicos
+
+- **BeforeAfter.java** - Teste simples com WebDriver
+
+- **Cadastro.java** - Teste com configuração Before/After do TestNG
+
+- **CadastroFormulario.java** - Teste completo com preenchimento de formulário e dados aleatórios
