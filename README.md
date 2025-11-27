@@ -44,7 +44,7 @@ testes simples até uma estrutura mais robusta com padrão Page Object.
 
 - **CadastroFormulario.java** - Teste completo com preenchimento de formulário e dados aleatórios
 
-## 2. Padrão Page Object
+### 2. Padrão Page Object
 
 - **Web.java** - Factory para criação do WebDriver
 
@@ -58,8 +58,8 @@ testes simples até uma estrutura mais robusta com padrão Page Object.
 
 - **CadastroPageObject.java** - Teste utilizando o padrão Page Object
 
-  ##📖 Como Executar
-## Pré-requisitos
+  ## 📖 Como Executar
+### Pré-requisitos
 
 - Java 17 ou superior
 
@@ -80,3 +80,54 @@ O projeto utiliza o padrão Page Object Model (POM) que oferece:
 - Manutenibilidade: Mudanças na UI exigem atualizações apenas nas pages
 
 - Legibilidade: Testes ficam mais claros e expressivos
+
+### Exemplo de Uso:
+
+```new PreCadastro(navegador)
+    .login("UsuarioTeste")
+    .email("teste@email.com")
+    .pagina()
+    .genero()
+    .senha("senha123")
+    // ... mais ações
+    .pagina(); // finaliza cadastro
+```
+
+## ⚙️ Configurações
+
+### Dependências no pom.xml
+- Selenium Java para automação web
+
+- TestNG como framework de teste
+
+- WebDriverManager para gerenciamento automático de drivers
+
+- JUnit e FEST Assert para verificações
+
+### Configurações do VS Code
+
+- O settings.json inclui imports favoritos para:
+
+- JUnit 4 e 5
+
+- Mockito
+
+- Assertions e Assumptions
+
+## 🎯 Funcionalidades de Teste
+
+✅ Navegação para página de login
+
+✅ Preenchimento de formulário de cadastro
+
+✅ Geração de dados aleatórios para testes
+
+✅ Seleção de opções em dropdowns
+
+✅ Marcação de checkboxes
+
+✅ Submissão de formulários
+
+✅ Verificação de criação de conta bem-sucedida
+
+
